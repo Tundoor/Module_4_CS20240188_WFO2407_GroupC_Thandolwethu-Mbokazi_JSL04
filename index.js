@@ -7,16 +7,19 @@ let userPreference = ''; // Possible values: 'Regular', 'Sugar-free', or undefin
     return userPreference ? 'Sugar-free': 'Regular';
   }
   console.log(flavourSelection())
-// #### Challenge 2: Stock Check
-// You have a variable that tracks the number of Monster Energy cans left in the fridge. 
-// Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
-let cansLeft = 3; // Any number of cans
-console.log(``);
+  // #### Challenge 2: Stock Check
+
+let cansLeft = 3;
+   function stockCheck () {               //Checks the number of monster cans in fridge.
+    return cansLeft < 5 ? "Time to restock!": "We're stocked!"
+   }
+  
+console.log(stockCheck());
 
 
 // #### Challenge 3: Workout Intensity
-// Based on the current heart rate, determine if the user should drink a Monster Energy drink to boost their workout. 
+// Based on the current heart rate, determine if the user should  drink a Monster Energy drink to boost their workout. 
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
 let heartRate = 95; // Current heart rate in bpm
